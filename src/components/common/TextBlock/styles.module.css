@@ -1,0 +1,20 @@
+.block a {
+  text-decoration: underline;
+  color: var(--mui-palette-secondary-light);
+}
+
+.block section {
+  overflow-x: auto;
+}
+
+.block table {
+  width: 100%;
+}
+
+.block tr th {
+  text-align: left;
+}
+
+.block tr td {
+  overflow-wrap: break-word;
+}

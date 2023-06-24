@@ -1,0 +1,10 @@
+[
+  {
+    "pageTitle": "Safe – Cookie Policy",
+    "component": "common/MetaTags"
+  },
+  {
+    "title": "Cookie Policy",
+    "component": "common/TextBlock"
+  }
+]
