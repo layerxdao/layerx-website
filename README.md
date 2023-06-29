@@ -1,4 +1,4 @@
-# Safe Homepage
+# LayerX Homepage
 
 ![license](https://img.shields.io/github/license/safe-global/safe-homepage)
 ![release](https://img.shields.io/github/v/release/safe-global/safe-homepage)

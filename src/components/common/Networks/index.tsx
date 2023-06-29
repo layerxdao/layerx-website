@@ -46,30 +46,32 @@ const Networks = ({ title, text, networks }: NetworksProps) => {
   const shuffledNetworks = networks.slice(2, 8).reverse().concat(networks.slice(8).reverse(), networks.slice(0, 2))
 
   return (
-    <div className={layoutCss.containerMedium}>
-      <Typography variant="h2" mb={5} align="center">
-        {title}
-      </Typography>
-      <div className={css.networksWrapper}>
-        <div className={css.gradientBase} />
-        <div className={css.animation}>
-          <div className={css.slider}>
-            <NetworksRow networksRow={networks} chainsData={chainsData} />
-            <NetworksRow networksRow={networks} chainsData={chainsData} />
-          </div>
-        </div>
-        <div className={clsx(css.animation, css.animationReverse)}>
-          <div className={css.slider}>
-            <NetworksRow networksRow={shuffledNetworks} chainsData={chainsData} />
-            <NetworksRow networksRow={shuffledNetworks} chainsData={chainsData} />
-          </div>
-        </div>
-        <div className={clsx(css.gradientBase, css.gradientFlipped)} />
-      </div>
-      <Typography className={css.secondaryText} variant="body1">
-        {text}
-      </Typography>
-    </div>
+    <>
+    </>
+    // <div className={layoutCss.containerMedium}>
+    //   <Typography variant="h2" mb={5} align="center">
+    //     {title}
+    //   </Typography>
+    //   <div className={css.networksWrapper}>
+    //     <div className={css.gradientBase} />
+    //     <div className={css.animation}>
+    //       <div className={css.slider}>
+    //         <NetworksRow networksRow={networks} chainsData={chainsData} />
+    //         <NetworksRow networksRow={networks} chainsData={chainsData} />
+    //       </div>
+    //     </div>
+    //     <div className={clsx(css.animation, css.animationReverse)}>
+    //       <div className={css.slider}>
+    //         <NetworksRow networksRow={shuffledNetworks} chainsData={chainsData} />
+    //         <NetworksRow networksRow={shuffledNetworks} chainsData={chainsData} />
+    //       </div>
+    //     </div>
+    //     <div className={clsx(css.gradientBase, css.gradientFlipped)} />
+    //   </div>
+    //   <Typography className={css.secondaryText} variant="body1">
+    //     {text}
+    //   </Typography>
+    // </div>
   )
 }
 

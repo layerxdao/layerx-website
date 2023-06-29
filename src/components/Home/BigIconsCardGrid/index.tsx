@@ -10,19 +10,19 @@ import Link from 'next/link'
 
 const BigIconsCardGrid = ({ items }: BaseBlock): ReactElement => {
   return (
-    <div className={css.bg}>
+    <div>
       <Container disableGutters>
-        <Grid container className={layoutCss.containerMedium} spacing={{ xs: '30px', xl: '50px' }}>
+        <Grid container className={layoutCss.containerTiny} spacing={{ xs: '30px', xl: '50px' }}>
           {items &&
             items.map((item, index) => (
-              <Grid key={index} item xs={12} md={6}>
+              <Grid key={index} item xs={6} md={3}>
                 <div className={css.card}>
                   <Typography variant="caption" mb={3}>
                     {item.caption}
                   </Typography>
                   <img {...item.image} />
                   <div className={css.tag}>{item.text}</div>
-                  <Typography variant="h3" mb={5} mt={2}>
+                  <Typography variant="h4" mb={5} mt={2}>
                     {item.title}
                   </Typography>
                   {item.link && (

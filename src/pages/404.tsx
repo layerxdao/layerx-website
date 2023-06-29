@@ -7,7 +7,7 @@ import { Box, Link } from '@mui/material'
 const My404Page: NextPage = () => (
   <>
     <Head>
-      <title>Safe – Page not found</title>
+      <title>LayerX – Page not found</title>
     </Head>
 
     <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center" height="55vh">

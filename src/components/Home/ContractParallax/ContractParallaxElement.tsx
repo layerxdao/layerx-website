@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import BugBountyImage from '@/public/images/bug-bounty.png'
+import BugBountyImage from '@/public/images/gif2.gif'
 import TotalAuditsImage from '@/public/images/total-audits.png'
 import G0GroupImage from '@/public/images/g0-group.png'
 import RuntimeVerificationImage from '@/public/images/runtime-verification.png'
@@ -13,7 +13,7 @@ const ContractParallaxElement = () => {
       <ParallaxWrapper translateX={0} translateY={0} depth={1} direction={-1}>
         <Image src={BugBountyImage} alt="1M$ Average reward per bug in bug bounty" className={css.bugBountyCard} />
       </ParallaxWrapper>
-      <ParallaxWrapper translateX={0} translateY={0} depth={0} direction={-1}>
+      {/* <ParallaxWrapper translateX={0} translateY={0} depth={0} direction={-1}>
         <Image src={TotalAuditsImage} alt="11+ Total audits" className={css.totalAuditsCard} />
       </ParallaxWrapper>
       <ParallaxWrapper translateX={0} translateY={200} depth={0} direction={-1}>
@@ -24,7 +24,7 @@ const ContractParallaxElement = () => {
       </ParallaxWrapper>
       <ParallaxWrapper translateX={0} translateY={0} depth={0} direction={-1}>
         <Image src={GreenCheckmarkImage} alt="Just a green checkmark" className={css.greenCheckmarkCard} />
-      </ParallaxWrapper>
+      </ParallaxWrapper> */}
     </div>
   )
 }

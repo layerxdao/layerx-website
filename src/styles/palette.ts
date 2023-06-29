@@ -6,14 +6,14 @@ export const palette = {
     dark: '#121312',
   },
   primary: {
-    dark: '#0cb259',
-    main: '#12FF80',
+    dark: '#a77515',
+    main: '#f1ae18',
     light: '#A1A3A7',
   },
   secondary: {
     dark: '#DCDEE0',
     main: '#FFFFFF',
-    light: '#12FF80',
+    light: '#f1ae18',
     background: '#303033',
   },
   border: {
@@ -46,9 +46,9 @@ export const palette = {
     background: '#2F2318',
   },
   background: {
-    default: '#121312',
+    default: '#000000',
     dark: '#1C1C1C',
-    main: '#121312',
+    main: '#000000',
     paper: '#1C1C1C',
     light: '#1B2A22',
   },

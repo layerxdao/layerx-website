@@ -10,10 +10,10 @@ const ParallaxAppStoreElement = () => {
     <div className={css.parallaxWrapper}>
       <FrameImage className={css.baseImage} />
       <ParallaxWrapper translateX={0} translateY={0} depth={2} direction={-1}>
-        <Image src={Logos1Image} alt="Safe apps logos" className={css.logos1} />
+        <Image src={Logos1Image} alt="LayerX apps logos" className={css.logos1} />
       </ParallaxWrapper>
       <ParallaxWrapper translateX={0} translateY={0} depth={0} direction={-1}>
-        <Image src={Logos2Image} alt="Safe apps logos" className={css.logos2} />
+        <Image src={Logos2Image} alt="LayerX apps logos" className={css.logos2} />
       </ParallaxWrapper>
     </div>
   )

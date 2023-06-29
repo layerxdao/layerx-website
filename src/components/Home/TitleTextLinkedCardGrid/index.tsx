@@ -10,7 +10,7 @@ import type { BaseBlock } from '@/components/Home/types'
 const TitleTextLinkedCardGrid = ({ title, text, caption, items }: BaseBlock): ReactElement => {
   return (
     <Container>
-      <div className={layoutCss.container}>
+      <div className={`${layoutCss.containerTiny}`} style={{"marginBottom" : "100px"}}>
         <Typography variant="caption" component="div" mb={{ xs: 2, md: 3 }}>
           {caption}
         </Typography>

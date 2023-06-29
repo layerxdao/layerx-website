@@ -35,7 +35,7 @@ const ParallaxText = ({
               {caption}
             </Typography>
           )}
-          <Typography variant="h2">{title}</Typography>
+          <Typography variant="h3">{title}</Typography>
           <Typography>{text}</Typography>
           {steps && <Stepper steps={steps} />}
           {buttons ? (

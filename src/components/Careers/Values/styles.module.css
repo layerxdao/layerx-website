@@ -50,12 +50,15 @@
   min-width: auto;
   padding-right: 32px;
 }
+.imgicon{
+  height: 250px;
+}
 
 .value {
   background-image: linear-gradient(45deg, var(--mui-palette-primary-main) 25%, var(--mui-palette-info-dark) 100%);
   background-clip: text;
   color: transparent;
-  font-size: 64px;
+  font-size: 20px;
   line-height: 64px;
   padding-bottom: 16px;
   margin-bottom: 16px;
@@ -69,12 +72,18 @@
 .card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /* align-items: center; */
   text-align: center;
 }
 
 .icon path {
   fill: var(--mui-palette-primary-main);
+}
+
+@media only screen and (max-width: 600px) {
+  .imgicon{
+    display: none;
+  }
 }
 
 @media (min-width: 600px) {
@@ -83,7 +92,7 @@
   }
 
   .value {
-    font-size: 80px;
+    font-size: 45px;
     line-height: 90px;
     max-width: 90%;
   }

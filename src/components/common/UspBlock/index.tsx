@@ -47,7 +47,7 @@ export type UspBlockProps = {
 
 const UspBlock = ({ variant, title, text, items }: UspBlockProps): ReactElement => (
   <Container>
-    <Grid container className={layoutCss.containerShort} flexDirection="column" alignItems="center">
+    <Grid container mb="100px" className={layoutCss.containerShort} flexDirection="column" alignItems="center">
       <Typography variant="h2" mb={3}>
         {title}
       </Typography>

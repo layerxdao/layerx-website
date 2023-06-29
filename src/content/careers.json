@@ -1,6 +1,6 @@
 [
   {
-    "pageTitle": "Jobs at Safe",
+    "pageTitle": "Jobs at LayerX",
     "component": "common/MetaTags"
   },
   {
@@ -41,7 +41,7 @@
     "component": "Careers/Values"
   },
   {
-    "title": "<i>Safe</i> in the news",
+    "title": "<i>LayerX</i> in the news",
     "items": [
       {
         "image": {
@@ -59,7 +59,7 @@
           "src": "/images/yahoo-finance.svg",
           "alt": "Yahoo Finance logo"
         },
-        "title": "Gnosis Safe rebrands to Safe, Raises $100M",
+        "title": "Gnosis LayerX rebrands to LayerX, Raises $100M",
         "link": {
           "title": "Read more",
           "href": "https://finance.yahoo.com/news/gnosis-safe-rebrands-safe-raises-130000225.html"
@@ -70,7 +70,7 @@
           "src": "/images/decrypt.svg",
           "alt": "Decrypt logo"
         },
-        "title": "Gnosis Safe launches SafeDAO and Safe Token",
+        "title": "Gnosis LayerX launches SafeDAO and LayerX Token",
         "link": {
           "title": "Read more",
           "href": "https://decrypt.co/110781/gnosis-safe-launches-safedao-safe-token"
@@ -145,7 +145,7 @@
           "width": "50px"
         },
         "title": "Token plan",
-        "text": "Have a stake in our mission and shape the future of Safe with a bonus token plan"
+        "text": "Have a stake in our mission and shape the future of LayerX with a bonus token plan"
       },
       {
         "image": {

@@ -7,9 +7,9 @@
 }
 
 .bugBountyCard {
-  position: absolute;
-  left: 0;
-  width: 96px;
+  /* position: absolute; */
+  /* left: 0; */
+  width: auto;
   height: auto;
 }
 
@@ -42,12 +42,13 @@
 
 @media (min-width: 600px) {
   .parallaxWrapper {
-    width: 500px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
   }
 
   .bugBountyCard {
-    width: 141px;
+    width: 100%;
+    height: 100%;
   }
 
   .runtimeVerificationCard {

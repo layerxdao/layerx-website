@@ -3,12 +3,13 @@ import { Badge, Button, ButtonBase } from '@mui/material'
 import Link from 'next/link'
 
 import { AppRoutes } from '@/config/routes'
-import Logo from '@/public/images/logo.svg'
+import logo from '@/public/images/logo.png'
+import Image from 'next/image'
 import { WALLET_LINK } from '@/config/constants'
 import { useOpenPositions } from '@/hooks/useOpenPositions'
 import css from './styles.module.css'
 import clsx from 'clsx'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router' 
 
 const navItems = [
   {
@@ -16,7 +17,7 @@ const navItems = [
     href: AppRoutes.index,
   },
   {
-    label: 'Core',
+    label: 'Bridge',
     href: AppRoutes.core,
   },
   {
@@ -26,11 +27,7 @@ const navItems = [
   {
     label: 'Ecosystem',
     href: AppRoutes.ecosystem,
-  },
-  {
-    label: 'Careers',
-    href: AppRoutes.careers,
-  },
+  }
 ]
 
 const Header = () => {
@@ -52,7 +49,7 @@ const Header = () => {
     <div className={clsx(css.header, isOpen && css.visible)}>
       <div className={css.logo}>
         <Link href={AppRoutes.index}>
-          <Logo />
+          <Image className='logo-img'  src={logo} alt="logo"  />
         </Link>
       </div>
       <ButtonBase className={css.burger} onClick={toggleNavigation} aria-label="Toggle navigation" disableRipple>
@@ -68,7 +65,6 @@ const Header = () => {
                 onClick={closeNavigation}
               >
                 <Badge
-                  badgeContent={item.href === AppRoutes.careers ? positions.length : undefined}
                   color="primary"
                   className={css.badge}
                   slotProps={{
@@ -86,12 +82,13 @@ const Header = () => {
           <li>
             <Button
               className={css.button}
-              href={WALLET_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="contained"
+              href="#sec"
+              // target="_blank"
+              // rel="noopener noreferrer"
+              variant="contained" 
+              size="large"
             >
-              Launch Wallet
+              Connect Wallet
             </Button>
           </li>
         </ul>

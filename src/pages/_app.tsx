@@ -13,6 +13,10 @@ import { CookieBannerContextProvider } from '@/components/common/CookieBanner/Co
 import { CookieBanner } from '@/components/common/CookieBanner'
 
 import { theme } from '@/styles/theme'
+import * as gtag from "gtag"
+import Script from "next/script"
+import { useRouter } from "next/router"
+import { useEffect } from "react"
 
 import '@/styles/globals.css'
 import PageLayout from '@/components/common/PageLayout'
@@ -46,22 +50,54 @@ const App = ({
 }: AppProps & {
   emotionCache?: EmotionCache
 }): ReactElement => {
+
+  const router = useRouter()
+  useEffect(() => {
+    const handleRouteChange = (url:any) => {
+      gtag.pageview(url)
+    }
+    router.events.on("routeChangeComplete", handleRouteChange)
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange)
+    }
+  }, [router.events])
+
   return (
-    <CacheProvider value={emotionCache}>
-      <CssVarsProvider theme={cssVarsTheme}>
-        <CssBaseline />
+    <>
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
+      />
+      <Script
+        id="gtag-init"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${gtag.GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `,
+        }}
+      />
+      <CacheProvider value={emotionCache}>
+        <CssVarsProvider theme={cssVarsTheme}>
+          <CssBaseline />
 
-        <CookieBannerContextProvider>
-          <InitHooks />
+          <CookieBannerContextProvider>
+            <InitHooks />
 
-          <PageLayout>
-            <Component {...pageProps} />
-          </PageLayout>
+            <PageLayout>
+              <Component {...pageProps} />
+            </PageLayout>
 
-          <CookieBanner />
-        </CookieBannerContextProvider>
-      </CssVarsProvider>
-    </CacheProvider>
+            <CookieBanner />
+          </CookieBannerContextProvider>
+        </CssVarsProvider>
+      </CacheProvider>
+    </>
   )
 }
 

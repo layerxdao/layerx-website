@@ -6,6 +6,7 @@ import DiscordIcon from '@/public/images/discord-icon.svg'
 import TwitterIcon from '@/public/images/twitter-icon.svg'
 import MirrorIcon from '@/public/images/mirror-icon.svg'
 import GithubIcon from '@/public/images/github-icon.svg'
+import InstaIcon from '@/public/images/instagram.svg'
 
 import css from './styles.module.css'
 import Link from 'next/link'
@@ -19,22 +20,50 @@ import {
   GUARDIANS_LINK,
   BRAND_KIT,
   LICENSES_LINK,
+  DEV_LINK,
+  ZELAY_LINK,
+  COMMU_LINK,
+  STARTB_LINK,
+  RPCNODE_LINK,
+  TV_LINK,
+  NETWORK_LINK,
+  WALLET_ADDRESS_LINK
 } from '@/config/constants'
 import { useCookieBannerContext } from '../CookieBanner/CookieBannerContext'
-import Logo from '@/public/images/logo.svg'
+import logo from '@/public/images/logo.png'
+import Image from 'next/image'
 
 const COOKIE_PREFERENCES = '#cookies'
 
 const safeProtocolItems = [
   {
-    label: 'Core',
+    label: 'LayerX Dao',
     href: CORE_LINK,
     target: '_blank',
     rel: 'noreferrer',
   },
+  
   {
-    label: 'Developer Docs',
-    href: DOCS_LINK,
+    label: 'LayerX Community',
+    href: COMMU_LINK,
+    target: '_blank',
+    rel: 'noreferrer',
+  },
+  {
+    label: 'Start Building',
+    href: STARTB_LINK,
+    target: '_blank',
+    rel: 'noreferrer',
+  },
+  {
+    label: 'RPC Nodes',
+    href: RPCNODE_LINK,
+    target: '_blank',
+    rel: 'noreferrer',
+  },
+  {
+    label: 'LayerX TV',
+    href: TV_LINK,
     target: '_blank',
     rel: 'noreferrer',
   },
@@ -42,20 +71,26 @@ const safeProtocolItems = [
 
 const communityItems = [
   {
-    label: 'Safe DAO',
+    label: 'Guild',
     href: FORUM_LINK,
     target: '_blank',
     rel: 'noreferrer',
   },
   {
-    label: 'Discord',
+    label: 'Taskon',
     href: CHAT_LINK,
     target: '_blank',
     rel: 'noreferrer',
   },
   {
-    label: 'Safe Guardians',
+    label: 'Galxe',
     href: GUARDIANS_LINK,
+    target: '_blank',
+    rel: 'noreferrer',
+  },
+  {
+    label: 'Zealy',
+    href: ZELAY_LINK,
     target: '_blank',
     rel: 'noreferrer',
   },
@@ -63,45 +98,38 @@ const communityItems = [
 
 const resourcesItems = [
   {
-    label: 'Careers',
-    href: AppRoutes.careers,
-  },
-  {
-    label: 'Help Center',
-    href: HELP_LINK,
+    label: 'News Channel', 
+    href: BRAND_KIT,
     target: '_blank',
     rel: 'noreferrer',
   },
   {
-    label: 'Brand Kit',
-    href: BRAND_KIT,
+    label: 'Devlopers',
+    href: DEV_LINK,
+    target: '_blank',
+    rel: 'noreferrer',
+  },
+  {
+    label: 'Docs',
+    href: DOCS_LINK,
+    target: '_blank',
+    rel: 'noreferrer',
+  },
+  {
+    label: 'Network Status',
+    href: NETWORK_LINK,
+    target: '_blank',
+    rel: 'noreferrer',
+  },
+  {
+    label: 'Wallet Address',
+    href: WALLET_ADDRESS_LINK,
     target: '_blank',
     rel: 'noreferrer',
   },
 ]
 
-const subFooterItems = [
-  {
-    label: 'Press Kit',
-    href: PRESS_LINK,
-    target: '_blank',
-    rel: 'noreferrer',
-  },
-  {
-    label: 'Licenses',
-    href: LICENSES_LINK,
-    target: '_blank',
-    rel: 'noreferrer',
-  },
-  {
-    label: 'Imprint',
-    href: AppRoutes.imprint,
-  },
-  {
-    label: 'Preferences',
-    href: COOKIE_PREFERENCES,
-  },
-]
+
 
 const Footer = () => {
   const { openBanner } = useCookieBannerContext()
@@ -117,13 +145,13 @@ const Footer = () => {
       <Grid container flexDirection={{ xs: 'column', sm: 'row' }}>
         <Grid item xs={12} md={3} mb={{ xs: 4, md: 0 }}>
           <Link href={AppRoutes.index}>
-            <Logo className={css.logo} />
+            <Image className='logo-img-footer' src={logo} alt="logo" />
           </Link>
         </Grid>
 
         <Grid item sm={6} md={2}>
           <Typography variant="caption" color="text.primary">
-            Safe Core Protocol
+            LayerX Core Protocol
           </Typography>
           <ul className={css.list}>
             {safeProtocolItems.map((item) => (
@@ -171,21 +199,13 @@ const Footer = () => {
             <ButtonBase
               disableRipple
               aria-label="Twitter link"
-              href="https://twitter.com/safe"
+              href="https://twitter.com/layerx_build"
               target="_blank"
               rel="noreferrer"
             >
               <TwitterIcon />
             </ButtonBase>
-            <ButtonBase
-              disableRipple
-              aria-label="Mirror link"
-              href="https://safe.mirror.xyz"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <MirrorIcon />
-            </ButtonBase>
+
             <ButtonBase
               disableRipple
               aria-label="Discord link"
@@ -197,12 +217,30 @@ const Footer = () => {
             </ButtonBase>
             <ButtonBase
               disableRipple
+              aria-label="Mirror link"
+              href="https://mirror.xyz/layerxdao.eth"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <MirrorIcon />
+            </ButtonBase>
+            <ButtonBase
+              disableRipple
               aria-label="Github link"
-              href="https://github.com/safe-global"
+              href="https://github.com/layerxone"
               target="_blank"
               rel="noreferrer"
             >
               <GithubIcon />
+            </ButtonBase>
+            <ButtonBase
+              disableRipple
+              aria-label="Github link"
+              href="https://www.instagram.com/lay.erx/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <InstaIcon />
             </ButtonBase>
           </div>
         </Grid>
@@ -210,31 +248,10 @@ const Footer = () => {
 
       <Divider sx={{ mt: 5, mb: { xs: 3, md: 0 } }} />
 
-      <Grid container alignItems="center" justifyContent="space-between">
-        <Grid item>
-          <ul className={css.subList}>
-            {subFooterItems.map((item) => {
-              const isCookiePreference = item.href === COOKIE_PREFERENCES
-
-              return (
-                <li className={css.subListItem} key={item.href}>
-                  <Link
-                    href={item.href}
-                    target={item.target}
-                    rel={item.rel}
-                    onClick={isCookiePreference ? showBanner : undefined}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              )
-            })}
-          </ul>
-        </Grid>
-
+      <Grid container alignItems="center" justifyContent="center">
         <Grid item my={2}>
           <Typography color="primary.light" fontSize="16px">
-            ©{new Date().getFullYear()} Safe Ecosystem Foundation
+            ©{new Date().getFullYear()} LayerX
           </Typography>
         </Grid>
       </Grid>

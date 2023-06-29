@@ -42,7 +42,7 @@ export type LinkedCardGridProps = {
 
 const LinkedCardGrid = ({ title, items }: LinkedCardGridProps) => (
   <Container>
-    <Grid container justifyContent="center" mt="100px">
+    <Grid container justifyContent="center" mt="100px" mb="100px">
       <Typography variant="caption" textAlign="center" component="div" mb={3}>
         {title}
       </Typography>

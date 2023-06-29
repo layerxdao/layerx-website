@@ -87,3 +87,13 @@ u:before {
 u:after {
   mask-image: url('/images/right-brace.svg');
 }
+
+.logo-img{
+  height: 50%;
+  width: 25%;
+}
+
+.logo-img-footer{
+  height: auto;
+  width: 77%;
+}

@@ -1,8 +1,8 @@
 import type { NextPage } from 'next'
 import { Core } from '@/components/Core'
 
-const CorePage: NextPage = () => {
+const BridgePage: NextPage = () => {
   return <Core />
 }
 
-export default CorePage
+export default BridgePage

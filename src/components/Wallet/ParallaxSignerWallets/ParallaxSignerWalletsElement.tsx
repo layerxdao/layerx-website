@@ -14,7 +14,7 @@ const ParallaxBatchingElement = () => {
         <Image src={Wallets2Image} alt="Wallets logos" className={css.wallets2} />
       </ParallaxWrapper>
       <ParallaxWrapper translateX={0} translateY={0} depth={3} direction={-1}>
-        <Image src={PhoneImage} alt="Assets view on Safe mobile" className={css.phone} />
+        <Image src={PhoneImage} alt="Assets view on LayerX mobile" className={css.phone} />
       </ParallaxWrapper>
       <ParallaxWrapper translateX={0} translateY={0} depth={1} direction={-1}>
         <Image src={Wallets1Image} alt="Wallets logos" className={css.wallets1} />

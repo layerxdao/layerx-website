@@ -1,0 +1,133 @@
+[
+  {
+    "pageTitle": "LayerX - LayerXDAO",
+    "component": "common/MetaTags"
+  },
+  {
+    "title": "Ethereum Scaled",
+    "text": "A developer-ready optimistic rollup for scaling Ethereum dapps",
+    "component": "Home/Intro"
+  },
+  {
+    "title": "Complete",
+    "items": [
+      {
+        "title": "INFRASTRUCTURE",
+        "text": "We have been building infrastructure used widely and globally since 2018",
+        "items": [
+          "Solidity SDK",
+          "Explore",
+          "SDKs",
+          "UI Components",
+          "Deploy",
+          "Dashboard"
+        ],
+        "img" : "/images/g2.png"
+      },
+      {
+        "title": "DEV TOOLS",
+        "text": "We are people focused within and outside the project",
+        "items": [
+          "Solidity SDK",
+          "Explore",
+          "SDKs",
+          "UI Components",
+          "Deploy",
+          "Dashboard"
+        ],
+        "img" : "/images/g3.png"
+      }
+    ],
+    "component": "Careers/Values"
+  },
+  {
+    "items": [
+      {
+        "caption": "",
+        "title": "Unlock user engagement with super low transaction fees.",
+        "text": "Low fees",
+        "image": {
+          "src": "/images/d1.png",
+          "alt": "Greater than sign, forward slash, less than sign"
+        }
+      },
+      {
+        "caption": "",
+        "title": "Fully compatible with existing tools, infrastructure.",
+        "text": "EVM equivalent",
+        "image": {
+          "src": "/images/d2.png",
+          "alt": "Greater than sign, forward slash, less than sign"
+        }
+      },
+      {
+        "caption": "",
+        "title": "Backed by the security of Ethereum and  500k+ validators.",
+        "text": "Secured by Ethereum",
+        "image": {
+          "src": "/images/d3.png",
+          "alt": "Greater than sign, forward slash, less than sign"
+        }
+      },
+      {
+        "caption": "",
+        "title": "Award-winning Optimistic rollup with industry-leading speed.",
+        "text": "Next gen scalability",
+        "image": {
+          "src": "/images/d4.png",
+          "alt": "Greater than sign, forward slash, less than sign"
+        }
+      }
+      
+    ],
+    "component": "Home/BigIconsCardGrid"
+  },
+  {
+    "variant": "image-text",
+    "caption": "Security",
+    "title": "Our contracts are<br /><b>the most<br />battle-tested</b>",
+    "text": "Since 2018, our smart contracts have passed the highest possible security standards in the industry including Formal Verification",
+    "buttons": [
+      {
+        "text": "Read report",
+        "href": "https://github.com/safe-global/safe-contracts/blob/78494bcdbc61b3db52308a25f0556c42cf656ab1/docs/Gnosis_Safe_Formal_Verification_Report_1_0_0.pdf",
+        "variant": "button"
+      },
+      {
+        "text": "Start bug hunting",
+        "href": "https://docs.safe.global/learn/security/bug-bounty-program",
+        "variant": "link"
+      }
+    ],
+    "component": "Home/ContractParallax"
+  },
+  {
+    "caption": "Governance",
+    "title": "Safe <u>DAO</u> <b>governs</b> the future of <i>Safe</i>",
+    "text": "<i>Safe</i> is governed by SafeDAO, a decentralized  collective of core contributors, backers, GnosisDAO, users and ecosystem contributors i.e Safe Guardians",
+    "items": [
+      {
+        "title": "Forum",
+        "caption": "Join community",
+        "link": {
+          "href": "https://forum.safe.global"
+        }
+      },
+      {
+        "title": "Latest<br/>Proposals",
+        "caption": "Follow DAO decisions",
+        "link": {
+          "href": "https://forum.safe.global/c/proposals/seps/33"
+        }
+      },
+      {
+        "title": "Safe<br/>Guardians",
+        "caption": "Ecosystem contributors",
+        "link": {
+          "href": "https://guardians.safe.global"
+        }
+      }
+    ],
+    "component": "Home/TitleTextLinkedCardGrid"
+  }
+]

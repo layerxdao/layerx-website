@@ -35,7 +35,7 @@
             <rect x="187" width="70" height="70" fill="url(#pattern_ident_3)"/>
         </g>
     </g>
-    <circle cx="84" cy="100" r="4" fill="#12FF80"/>
+    <circle cx="84" cy="100" r="4" fill="#f1ae18"/>
     <defs>
         <pattern id="pattern_ident_0" patternContentUnits="objectBoundingBox" width="1" height="1">
             <use xlink:href="#image0_1243_3915" transform="scale(0.0078125)"/>
